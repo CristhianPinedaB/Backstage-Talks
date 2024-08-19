@@ -1,0 +1,222 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Robot', sans-serif;
+    font-size: 20px;
+    }
+
+html, body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+#root {
+    width: 100%;
+    height: 100%;    
+}
+    
+img {
+    width: 420px;
+}
+    
+.div_poster_container {
+        width: 100%;
+        transition: background-color 0.5s ease-in-out;
+}
+    
+.div_poster {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        background-color: transparent;
+}
+    
+header {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-weight: 900;
+        font-size: 1.15rem;
+}
+    
+.elem_footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+    
+.description_footer {
+        align-items: center;
+        text-align: center;
+        padding: 20px 20px 10px 20px;
+        font-weight: 700;
+        font-size: 1.25rem;
+}
+    
+.a_footer_published{
+        text-decoration: underline;
+}
+
+.a_footer_published:hover,
+.a_footer_published:focus{
+    text-decoration: none;
+    cursor: pointer;
+}
+    
+.div_email {
+        text-align: center;
+        background-color: #F6E0A4;
+}
+
+.div_footer {
+    background-color: #F6E0A4;
+    padding-bottom: 10px;
+}
+    
+.a_email {
+        font-size: 1.4rem;
+        color: black;
+        font-weight: 600;
+}
+    
+.nav_list {
+        display: none;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+    
+.p_name_poster {
+        font-size: 1.1rem;
+        font-weight: 600;
+}
+    
+.a_link_buy {
+        font-size: 1.1rem;
+        font-weight: 900;
+        color: rgb(255, 255, 255);
+        text-shadow: black 1px 0 2px;
+}
+
+.a_link_buy:hover {
+    text-shadow: black 1px 0 10px;
+}
+    
+.a_selected_stores {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        text-shadow: black 1px 0 2px;
+}
+
+.a_selected_stores:hover{
+    text-shadow: black 1px 0 10px;
+}
+    
+.a_privacy_policy {
+        margin-top: 10px;
+        color: black;
+        font-size: 1.3rem;
+        font-weight: 600;
+        text-decoration: underline;
+}
+
+.a_privacy_policy:hover{
+    text-decoration: none;
+
+}
+    
+
+    
+@media (min-width: 1200px) {
+        
+
+        header {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                font-weight: 900;
+                font-size: 1.25rem;
+        }
+
+        .ul_list {
+                list-style: none;
+        }
+
+        .nav_list {
+                display: block;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+        }
+
+
+        .div_email {
+                background-color: transparent;
+                position: fixed;
+                z-index: 2;
+                top: 20px;
+                right: 20px;
+        }
+
+        .div_footer {
+                background-color: transparent;
+                position: fixed;
+                z-index: 2;
+                bottom: 20px;
+                left: 20px;
+                width: 30%;
+        }
+
+        .elem_footer {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+        }
+
+        .p_footer_published {
+                text-align: left;
+        }
+
+        .description_footer {
+                font-size: 1rem;
+                text-align: left;
+                padding: 20px 20px 10px 0px;
+        }
+
+        .div_poster_container {
+                width: 100%;
+                transition: background-color 0.5s ease-in-out;
+        }
+                
+        .div_poster {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+                width: 100vw;
+                height: 100vh;
+                background-color: transparent;
+        }
+}
